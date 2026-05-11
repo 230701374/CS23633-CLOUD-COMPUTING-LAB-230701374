@@ -32,10 +32,7 @@ def index():
 
             objects, output_image, object_names = detect_objects(input_path)
 
-            caption = generate_caption(input_path)
-
-            # Simple explanation
-            explanation = caption.capitalize()
+            explanation = "Image analyzed successfully using Vision Analyzer."
 
             # Prevent browser caching
             output_image = output_image + "?t=" + str(time.time())
